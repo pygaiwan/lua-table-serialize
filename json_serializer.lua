@@ -9,8 +9,8 @@ end
 
 ---Serialize to JSON compatible format a table.
 ---@param o any
----@param text string  "Starts to empty."
----@param indent integer "Indentation used, empty to 0."
+---@param text? string  "Starts to empty."
+---@param indent? integer "Indentation used, empty to 0."
 ---@return string "Value of text after serialization"
 local function to_json(o, text, indent)
     text = text or ''
